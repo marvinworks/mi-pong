@@ -30,7 +30,7 @@ connect.socket.on('message', function(data){
 });
 
 // Margin around the game area
-var margin = { top: 0, left: 0, bottom: 180, right: 0 };
+var margin = { top: 0, left: 0, bottom: 0, right: 0 };
 var color = { playerOne: '#dd1166', playerTwo: '#77cc00' };
 
 
@@ -79,7 +79,7 @@ var canvas = new function(){
 		}
 
 		ctx.fillStyle = "rgba(255, 255, 255, 0.85)";
-		ctx.fillRect(0, canvas.h - 1, canvas.w, 1)
+		ctx.fillRect(0, canvas.h, canvas.w, 1)
 	}
 
 	self.resize = function(){

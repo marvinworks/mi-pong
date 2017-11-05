@@ -10,13 +10,17 @@
 
 body{
 	font-family: FFFForward, "Amatic SC";
-	padding: 0; 
-	margin: 0; 
+	padding: 0;
+	margin: 0;
 	overflow: hidden;
 }
 
 .url{
 	font-family: Helvetica, Arial, sans-serif;
+}
+
+#canvas {
+	z-index: 10;
 }
 
 body.server,
@@ -31,7 +35,7 @@ body.client {
 	left: 10px;
 	right: 10px;
 	bottom: 10px;
-	
+
 	background: #EADCB7;
 }
 
@@ -43,7 +47,7 @@ body.client {
 	left: 50%;
 	margin: -50px -70px;
 	white-space: pre;
-	
+
 	font-size: 22px;
 }
 
@@ -54,24 +58,27 @@ body.client {
 
 
 #footer {
-	margin-top: 20px;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 5rem;
+	height: 100px;
+	width: 100%;
+	z-index: 1;
 }
 
 
 img#th_logo {
-	float: left;
-	margin-left: 35px;
-	height: 100px;
-	width: 187px;
+	margin-left: 100px;
+	height: 100%;
 	margin-top: 20px;
+	position: absolute;
 }
 
 img#viel_drin {
-	float: right;
-	margin-right: 35px;
-	margin-top: 20px;
-	height: 120px;
-	width: 333px;
+	margin-right: 100px;
+	height: 120%;
+	right: 0;
+	position: absolute;
 }
 
 
@@ -90,7 +97,7 @@ img#viel_drin {
 	display: inline-block;
 	margin: -25% 0;
 	opacity: 1;
-	
+
 	-webkit-transition: all .5s;
 	   -moz-transition: all .5s;
 	    -ms-transition: all .5s;

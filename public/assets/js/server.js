@@ -31,7 +31,7 @@ connect.socket.on('message', function(data){
 
 // Margin around the game area
 var margin = { top: 0, left: 0, bottom: 0, right: 0 };
-var color = { playerOne: '#dd1166', playerTwo: '#77cc00' };
+var color = { playerOne: '#dd1166', playerTwo: '#00AD2F' };
 
 
 // RequestAnimFrame: a browser API for getting smooth animations
